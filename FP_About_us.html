@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+img {
+    float: right;
+}
+body{
+    background-color: #FF5F56;
+}
+header{
+  background-image: url(background.png);
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+}
+.button {background-color: #D16A6A; color: indian-red;}
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.a {
+    text-align: center;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="FP_Volunteer_Opportunities.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Volunteer Opportunities</a>
+    <a href="FP_My_Personal_Journal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">My Personal Journal</a>
+    <a href="FP_About_us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">About Us</a>
+    <a href="new_account.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Create an Account</a>
+    <!-- <a href="API_sign_in.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Log In</a> -->
+    <div id="id01" class="modal">
+
+<!--       <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="C:/GWC/finalProject/user-image.png" style="width:20%" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>E-mail</b></label>
+          <input type="text" placeholder="Enter E-mail" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Submit</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#"><a href="newAccount.html">Create a new account</a></a></span>
+        </div>
+      </form> -->
+    </div>
+  </div>
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">ABOUT US</h1>
+</header>
+
+<div class="w3-row-padding w3-light-pink w3-padding-64 w3-container">
+  <div class="w3-row">
+    <div class="w3-twothird">
+      <div class="a">
+      <h1></h1>
+      <h3 class="w3-padding-32 w3-text-black">Hi! We are Catherine, Megan, and Isabelle, three girls who are passionate about creating change through code. YouServe is a project that originated from the Girls Who Code Summer Immersion Program here in Austin, Texas.
+        We grouped together to develop this organization because we wanted to give other people the resources to engage in social good and serve those around them.
+        We believe that combining coding with volunteering will create a greater community.</h3>
+    </div>
+      <p class="w3-text-white"></p>
+    </div>
+
+
+    <div class="w3-third w3-right">
+      <i class="group w3-padding-100 w3-text-red"></i>
+  <p><img src="group_pic.jpg" alt="group picture" style="width:450px;height:315px;margin-left:2px;">
+    </div>
+</div>
+</div>
+
+<!-- First Grid -->
+<!-- <div class="w3-row-padding w3-indian-red w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <div class="a">
+      <h4 class="w3-padding-32">Hi! We are Catherine, Megan and Isabelle, three girls who are passionate about creating change through code. YouServe is a project that originated from the Girls Who Code Summer Immersion Program here in Austin, Texas.
+        We grouped together to develop this organization because we wanted to give other people the resources to engage in social good and serve those around them.
+        We believe that combining coding with volunteering will create a greater community.</h4> -->
+<!--
+    <div class="w3-third w3-center">
+        <i class="group_pic w3-padding-64 w3-text-red"></i>
+        <img src="group_pic.jpg" style="width:50%;">
+      </div> -->
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:#F7EDF0">
+<div class="a">
+  <p class="w3-text-black"></p>
+<h1 class="w3-padding-32 w3-text-black">Meet The Creators</h1>
+</div>
+
+<!-- <p class="w3-text-black"></p> -->
+<div class="column" style="background-color:#F7EDF0;">
+  <div class="a">
+  <h3>Catherine Fang (Founder, Coder)</h3>
+  <p>My name is Catherine Fang, and love to volunteer in my free time, but sometimes I find it difficult to find the perfect place to help out at. This is why we decided to make an open forum for people to discuss their experiences at different volunteer locations: it allows everyone to learn which organizations are the best fit for their interests. I firmly believe that by creating a website dedicated to exposing people to the countless ways that they can impact their community, more people will take the initiative to serve others. </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#F7EDF0">
+    <div class="a">
+      <!-- <p class="w3-text-black"></p> -->
+    <h3>Megan Sng (Founder, Coder) </h3>
+    <p>My name is Megan Sng, and I am so excited to present YouServe, our final project for Girls Who Code 2018! It has been such an incredible journey and I am very proud of what we have accomplished. Volunteering has always been a huge part of my life and it has made me who I am today, which is why I wanted to make it accessible and enjoyable for everyone. I truly believe that giving back and serving those around you makes the world a better place and by creating YouServe, we are making volunteering both gratifying and useful for all parties involved.</p>
+</p>
+</div>
+  </div>
+
+  <!-- <p class="w3-text-black"></p> -->
+  <div class="column" style="background-color:#F7EDF0;">
+    <div class="a">
+    <h3>Isabelle Grimesey (Founder, Coder) </h3>
+    <p>My name is Isabelle, and I’m excited to present our project for Girls Who Code 2018 Summer Immersion Program. I want to start serving my community, but I don’t know how I can get involved. Keeping track of my service seems like an overwhelming task. I know that if I can solve these issues, then I will be doing community service in no time. That’s why I decided to create this platform, to help people have a more convenient experience when starting. If learning about and keeping track of service can be easy, more people will get involved.</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
