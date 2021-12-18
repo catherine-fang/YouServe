@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+  <style>
+  body {
+    background: pink;
+    font-family: 'Sunflower', sans-serif; font-size: 24px;
+  }
+  #results{
+    width:450px;
+    height:200px;
+    color:black;
+  }
+  #submit{
+    background-color:white;
+    color:black;
+  }
+  #test-form,
+  #left,
+  #right {
+    float: left;
+  }
+  #left {
+    width: 40%;
+  }
+  #right {
+    width: 15%;
+  }
+  #test-form {
+    width: 45%;
+  }
+  h2{
+    font-family:georgia;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    color: #f0ffff;
+  }
+  td,
+  th {
+    border: black solid 1px;
+    padding: 5px;
+  }
+  td {
+    background-color: white;
+    color: black;
+  }
+  th {
+    background-color: grey;
+    color: white;
+    font-family: georgia;
+  }
+  </style>
+
+  <script>
+  function formToJSON(table){//begin function
+
+
+//array to hold the key name
+var keyName;
+
+//array to store the keyNames for the objects
+var keyNames = [];
+
+//array to store the objects
+var objectArray = [];
+
+
+//get the number of cols
+var numOfCols = table.rows[0].cells.length;
+
+//get the number of rows
+var numOfRows = table.rows.length;
+
+//add the opening [ array bracket
+objectArray.push("[");
+
+
+
+//loop through and get the propertyNames or keyNames
+for(var i = 0; i < numOfCols; i++){//begin for loop
+
+  //store the html of the table heading in the keyName variable
+keyName = table.rows[0].cells[i].innerHTML;
+
+  //add the keyName to the keyNames array
+  keyNames.push(keyName);
+
+}//end for loop
+
+
+
+  //loop through rows
+  for(var i = 1; i < numOfRows; i++){//begin outer for loop
+
+    //add the opening { object bracket
+    objectArray.push("{\n");
+
+  for(var j=0; j < numOfCols; j++){//begin inner for loop
+
+ //extract the text from the input value in the table cell
+ var inputValue = table.rows[i].cells[j].children[0].value;
+
+  //store the object keyNames and its values
+ objectArray.push("\"" + keyNames[j] + "\":" + "\"" + inputValue + "\"");
+
+//if j less than the number of columns - 1(<-- accounting for 0 based arrays)
+if(j < (numOfCols - 1)){//begin if then
+
+  //add the , seperator
+  objectArray.push(",\n");
+
+}//end if then
+
+  }//end inner for loop
+
+    //if i less than the number of rows - 1(<-- accounting for 0 based arrays)
+    if(i < (numOfRows - 1)){//begin if then
+
+      //add the closing } object bracket followed by a , separator
+      objectArray.push("\n},\n");
+
+  }
+    else{
+
+      //add the closing } object bracket
+      objectArray.push("\n}");
+
+    }//end if then else
+
+  }//end outer for loop
+
+   //add the closing ] array bracket
+   objectArray.push("]");
+
+  return objectArray.join("");
+
+
+}//end function
+
+
+$("#test-form").on("submit",function(e){
+
+  //stop form form submitting
+  e.preventDefault();
+
+  //the table object
+  var table = $("#json-table")[0];
+
+  //display the results
+$("#results").val(formToJSON(table));
+
+});
+  </script>
+
+</head>
+
+<body>
+  <p> </p>
+Welcome to COMPANY NAME!
+<p> To create an account, please make sure you are logged into your e-mail.</p>
+<p>Then, enter your personal information below, and we will send your password to your inbox.</p>
+
+<!-- <div id="left">
+  <textarea id="results"></textarea>
+</div> -->
+<form id="test-form">
+  <table id='json-table'>
+    <tbody>
+      <tr>
+        <th id="name">Full Name</th>
+        <th id="email">E-mail</th>
+        <th id="password">Password (case-sensitive)</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" size="35" value=""> </td>
+        <td>
+          <input type="text" size="35" value=""> </td>
+        <td>
+          <input type="text" size="50" value=""> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <input id="submit" type="submit" value="submit">
+
+</form>
+
+<br>
+<br>
+
+
+<div id="right">&nbsp</div>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+  <style>
+  body {
+    background-color: lightgrey;
+    font-family: 'Sunflower', sans-serif; font-size: 24px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+      background-color: #FF5F56;
+  }
+  header{
+    background-image: url(background.png);
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+  }
+
+  .button {background-color: #FF5F56; color: indian-red;}
+
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+  /* Set a style for all buttons */
+  button {
+      background-color: #FF5F56;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+  }
+  button:hover {
+      opacity: 0.8;
+  }
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: black;
+  }
+  /* Center the image and position the close button */
+  .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+  }
+  img.avatar {
+      width: 40%;
+      border-radius: 50%;
+  }
+  .container {
+      padding: 16px;
+  }
+  span.psw {
+      float: right;
+      padding-top: 16px;
+  }
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+  }
+  /* The Close Button (x) */
+  .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+      color: red;
+      cursor: pointer;
+  }
+  /* Add Zoom Animation */
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+  @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)}
+      to {-webkit-transform: scale(1)}
+  }
+  @keyframes animatezoom {
+      from {transform: scale(0)}
+      to {transform: scale(1)}
+  }
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+  }
+  </style>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.a {
+    text-align: center;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="FP_Volunteer_Opportunities.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Volunteer Opportunities</a>
+    <a href="FP_My_Personal_Journal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">My Personal Journal</a>
+    <a href="FP_About_us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">About Us</a>
+    <a href="new_account.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Create an Account</button>
+    <!-- <a href="API_sign_in.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Log In</a> -->
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="C:/GWC/finalProject/user-image.png" style="width:20%" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>E-mail</b></label>
+          <input type="text" placeholder="Enter E-mail" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <div class="w3-center">
+          <button class="w3-button w3-black" type="submit" style="width:20%">Submit</button>
+          <p> </p>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        </div>
+
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#"><a href="newAccount.html">Create a new account</a></a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Create an Account</h1>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-indian-red w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <div class="a">
+      <h1 style="font-size:24px">Please fill out your personal information and
+        preferences below. Then, we will add you in to our database to confirm
+        your identity and add in any requests to our volunteer records.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-indian-red w3-padding-20 w3-container">
+    <div class="w3-content">
+      <div class="w3-center">
+        <div class="a">
+        <h1 style="font-size:24px">Note: Make sure you are signed into the email
+        address you would like your account linked to, so we can match you to your
+        account properly when receiving your forms.</h1>
+        </div>
+      </div>
+    </div>
+</div>
+
+<p> </p>
+<p> </p>
+
+
+<!-- <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script> -->
+
+<div class="w3-row-padding w3-indian-red w3-padding-2000 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+        <!-- <div class="a"> -->
+        <form action="mailto:gwc.youserve@gmail.com" method="post" enctype="text/plain">
+          <b style="font-size:24px" class="w3-left"> Full Name:</b> <br>
+          <input type="text" name="Name "><br>
+          <p> </p>
+          <b style="font-size:24px" class="w3-left">Username:</b> <br>
+          <input type="text" name="Email " size="50"><br>
+          <p> </p>
+          <!-- <b style="font-size:24px" class="w3-left">Password (case-sensitive):</b> <br>
+          <input type="text" name="Password " size="50"><br> -->
+          <p> </p>
+          <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="reset" onclick="Reset" style="width:20%">Reset</button>
+          <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit" value="Send" style="width:20%">Submit</button>
+
+        </form>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>

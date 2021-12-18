@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+    background-color: #FF5F56;
+}
+header{
+  background-image: url(background.png);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="FP_Volunteer_Opportunities.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Volunteer Opportunities</a>
+    <a href="FP_My_Personal_Journal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">My Personal Journal</a>
+    <a href="FP_About_us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">About Us</a>
+    <a href="new_account.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Create an Account</a>
+    <!-- <a href="API_sign_in.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-right">Log In</a> -->
+    <div id="id01" class="modal">
+
+      <!-- <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="C:/GWC/finalProject/user-image.png" style="width:20%" alt="Avatar" class="avatar">
+        </div> -->
+
+        <!-- <div class="container">
+          <label for="uname"><b>E-mail</b></label>
+          <input type="text" placeholder="Enter E-mail" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Submit</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#"><a href="newAccount.html">Create a new account</a></a></span>
+        </div>
+      </form> -->
+    </div>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">VOLUNTEER OPPORTUNITIES</h1>
+  <p class="w3-large">Read reviews about various volunteer organizations</p>
+  <a href="newPost.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Write a Review</button></a>
+  <!-- <a href="FP_reviews.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Read the Reviews</button></a> -->
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-light-pink w3-padding-60 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <div class="b">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding w3-light-pink w3-padding-64 w3-container">
+  <div class="w3-content">
+    <!-- <div class="w3-third w3-center"> -->
+    <div class="a">
+      <p><h2>Name of Organization:</h2></p>
+      <h3>Review</h3>
+      <h3>Username</h3>
+    </div>
+    </div>
+<div class="w3-row-padding w3-light-pink w3-padding-64 w3-container">
+  <div class="w3-content">
+    <!-- <div class="w3-third w3-center"> -->
+    <div class="a">
+      <p><h2>Name of Organization: </h2></p>
+      <h3>Review</h3>
+      <h3>Username</h3>
+    </div>
+  </div>
+
+    <div class="w3-twothird">
+    </div>
+      <p class="w3-text-grey"></p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-pink w3-center w3-opacity w3-padding-64">
+</div>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
